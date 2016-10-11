@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dam.isi.frsf.edu.ar.lab02.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:id="@+id/textTitulo"
+        android:layout_weight="0.04"
+        android:textSize="20dp" />
+
+
+
+
+
+    <ToggleButton
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:textOn="@string/toggleText1"
+        android:textOff="@string/toggleText2"
+        android:id="@+id/toggleButton"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="218dp"
+        android:layout_height="37dp"
+        android:text="@string/label1"
+        android:id="@+id/textHorario" />
+
+    <Spinner
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_weight="0.06" />
+
+    <Switch
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label2"
+        android:id="@+id/switch1" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+    android:layout_height="124dp"
+    android:id="@+id/scrollView">
+        <TextView
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pedido"
+            android:id="@+id/textPedido"
+            android:layout_weight="1.24" />
+    </ScrollView>
+    <RadioGroup
+        android:id="@+id/rBtnGrp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText1"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText2"
+            android:id="@+id/radioButton2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioText3"
+            android:id="@+id/radioButton3" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText1"
+            android:id="@+id/button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText2"
+            android:id="@+id/button2"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonText3"
+            android:id="@+id/button3"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="322dp"
+        android:layout_height="138dp"
+        android:id="@+id/listView"
+        tools:listitem="@android:layout/simple_list_item_single_choice"
+        android:clickable="true" />
+
+
+</LinearLayout>
